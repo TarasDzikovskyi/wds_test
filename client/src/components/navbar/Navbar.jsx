@@ -1,4 +1,5 @@
 import './navbar.scss';
+import {Link} from "react-router-dom";
 
 export default function Navbar() {
 
@@ -29,37 +30,30 @@ export default function Navbar() {
                 </div>
 
                 <div className="right_side">
-
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services <span className='up_icon'></span></a>
-                            <ul className="dropdown">
-                                <li><a href="#">Sub-Menu 1</a></li>
-                                <li><a href="#">Sub-Menu 2</a>
-                                    <ul className="dropdown">
-                                        <li><a href="#">Some-Info 1</a></li>
-                                        <li><a href="#">Some-Info 2</a></li>
-                                        <li><a href="#">Some-Info 3</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="#">Services <span className='up_icon'></span></Link>
+                            <ul className="dropdown h195">
+                                <li><Link to="#">Sub-Menu 1</Link></li>
+                                <li><Link to="#">Sub-Menu 2</Link>
+                                    <ul className="dropdown h146">
+                                        <li><Link to="#">Some-Info 1</Link></li>
+                                        <li><Link to="#">Some-Info 2</Link></li>
+                                        <li><Link to="#">Some-Info 3</Link></li>
                                     </ul>
-
                                 </li>
-                                <li><a href="#">Sub-Menu 3</a></li>
-                                <li><a href="#">Sub-Menu 4</a></li>
+                                <li><Link to="#">Sub-Menu 3</Link></li>
+                                <li><Link to="#">Sub-Menu 4</Link></li>
                             </ul>
                         </li>
-
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Book now</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-
+                        <li><Link to="#">About</Link></li>
+                        <li><Link to="#">Book now</Link></li>
+                        <li><Link to="#">Shop</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
+                        <li><Link to="#">Contact</Link></li>
                     </ul>
-
-
                 </div>
             </div>
-
         </div>
     )
 }
