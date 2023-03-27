@@ -85,10 +85,9 @@
                 margin-right: 32px;
               }
             }
-
           }
 
-          @include tablet{
+          @include tablet {
             display: flex;
             justify-content: center;
           }
@@ -163,7 +162,7 @@
               background: linear-gradient(0deg, rgba(8, 128, 174, 0.8), rgba(8, 128, 174, 0.8));
             }
 
-            @media(max-width: 1860px){
+            @media(max-width: 1860px) {
 
             }
           }
@@ -188,8 +187,7 @@
         }
       }
 
-
-      @include tablet{
+      @include tablet {
         margin: 130px 0 80px;
 
       }
@@ -246,13 +244,10 @@
           }
         }
 
-
-        @include notebook{
+        @include notebook {
           margin: 0 9vw;
         }
       }
     }
   }
-
-
 }

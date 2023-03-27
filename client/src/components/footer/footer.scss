@@ -20,13 +20,6 @@
       justify-content: space-between;
       flex-wrap: wrap;
 
-      //.wrap{
-        //width: 50%;
-        //min-width: 600px;
-        //display: flex;
-        //justify-content: space-between;
-
-
       .menu-box {
         width: 300px;
 
@@ -58,8 +51,6 @@
       }
 
       .logo-box {
-        //width: 30%;
-
         .logo {
           height: 112px;
           width: 250px;
@@ -113,7 +104,6 @@
 
           @media (max-width: 1720px) {
             margin-bottom: 80px;
-
           }
 
           @include tablet{
@@ -132,7 +122,6 @@
 
           @media(max-width: 1790px){
             width: 280px;
-
           }
 
           @media(max-width: 1680px){
@@ -143,17 +132,8 @@
         @include tablet; @include notebook{
           margin-top: 50px;
         }
-
       }
-
-      //  @include tablet{
-      //    min-width: 500px;
-      //  }
-      //
-      //}
-
     }
-
 
 
     .last-text {
@@ -173,7 +153,5 @@
     @include notebook{
       margin: 64px 10vw 44px;
     }
-
   }
-
 }

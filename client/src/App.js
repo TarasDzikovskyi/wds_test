@@ -5,7 +5,6 @@ import './App.scss';
 import Home from "./pages/home/Home";
 import Blog from "./pages/blog/Blog";
 import Navbar from "./components/navbar/Navbar";
-import Test from "./pages/Test";
 
 function App() {
 
@@ -16,7 +15,6 @@ function App() {
             <Routes>
                 <Route exact path='/' element={<Home/>}/>
                 <Route exact path='/blog' element={<Blog/>}/>
-                <Route exact path='/test' element={<Test/>}/>
             </Routes>
         </Router>
     </div>

@@ -25,7 +25,6 @@ export default function Blog() {
         _DATA.jump(p);
     };
 
-
     useEffect(() => {
         const getPosts = async () => {
             const res = await axios.get('/posts')
@@ -35,29 +34,19 @@ export default function Blog() {
     }, [])
 
 
-    console.log(_DATA.currentData());
-
-
     return (
         <>
             <div className='blog'>
-
                 <div className="blog-wrapper">
-
-
                     <div className="main-box">
                         <div className="wrapper">
-
                             <div className="img-box">
                                 <img src={mainImage} alt="box-image" className='main-image'/>
                             </div>
 
                             <div className="info-box">
-
                                 <div className="info-wrapper">
-
                                     <h5 className='name-info'>Pharmaceuticals</h5>
-
                                     <h3 className='title'>A Sure Way To Get Rid Of Your Back Ache Problem</h3>
 
                                     <p className='desc'>
@@ -79,11 +68,8 @@ export default function Blog() {
 
                             <div className="news-box">
                                 <div className="news-wrapper">
-
                                     <h2 className='title-news'>Our Latest News</h2>
-
                                     <div className="cover-wrapper">
-
                                         <div className="cover">
                                             <div className='news'>
                                                 <h4 className='new-title'>Basic Swedish Back Massage Techniques</h4>
@@ -108,20 +94,13 @@ export default function Blog() {
                                             <img src={news3} alt="news-image" className='news-image'/>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
                     <div className="testimonials-box">
-
                         <div className="wrapper-review">
-
-
                             <div className="title">
                                 <h1>Testimonials</h1>
                             </div>
@@ -144,11 +123,8 @@ export default function Blog() {
                                 />
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
             <Footer/>
