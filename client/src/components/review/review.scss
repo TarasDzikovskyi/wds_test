@@ -1,17 +1,18 @@
 .review {
   width: 245px;
   height: 370px;
-  //background-color: #F26532;
+  margin: 0 8px 40px;
 
   .box {
     width: 245px;
     height: 292px;
     box-sizing: border-box;
+    background-color: #FFFFFF;
     border: 1px solid #C1C7D0;
     padding: 20px 24px;
     position: relative;
 
-    .reviewer{
+    .employee{
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
@@ -58,11 +59,10 @@
     border-left: 10px solid #fff;
     border-right: 11px solid transparent;
     border-top: 11px solid #fff;
-    border-bottom: 10px solid transparent;
+    border-bottom: 11px solid transparent;
     left: 0;
     bottom: -21px;
   }
-
 
 
   .profile{
@@ -74,10 +74,9 @@
   }
 
   .stars{
-    //display: flex;
     padding-left: 12px;
 
-    .star-name{
+    .reviewer{
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -89,7 +88,6 @@
       display: inline-block;
       font-size: 16px;
       position: relative;
-      //transform: translate(-6px);
     }
 
     .star-rating__max,
@@ -102,8 +100,6 @@
       overflow: hidden;
       white-space: nowrap;
     }
-
-
   }
 
 

@@ -21,22 +21,14 @@ function StarRating({ max, current }) {
     );
 }
 
-
-export default function Review() {
-
+export default function Review({item}) {
 
     return (
         <div className='review'>
             <div className='box sb'>
-
-                <p className='reviewer'>Jane Cooper</p>
-                <small className='position'>CTO - Dovas Inc.</small>
-                <p className='text'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec, egestas neque ipsum duis
-                    habitasse enim. Id ullamcorper at posuere mauris adipiscing aliquet risus. Malesuada amet.
-                </p>
-
-
+                <p className='employee'>{item.Employee}</p>
+                <small className='position'>{item.Company}</small>
+                <p className='text'>{item.Review}</p>
             </div>
 
             <div className="profile">
@@ -44,9 +36,9 @@ export default function Review() {
 
 
                 <div className="stars">
-                    <p className='star-name'>Dianne Russell</p>
+                    <p className='reviewer'>{item.Reviewer}</p>
 
-                    <StarRating max={5} current={3.4} />
+                    <StarRating max={5} current={item.Rating} />
                 </div>
 
             </div>

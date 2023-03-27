@@ -7,10 +7,13 @@ const app =express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-const blogRouter = require('./routes/blogRouter');
 
-app.use("/api/blog", blogRouter);
+const postsRouter = require('./routes/postsRouter');
+const authRouter = require('./routes/authRouter');
+
+app.use("/api/posts", postsRouter);
+app.use("/api/auth", authRouter);
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server is running on port ${process.env.PORT}!`);
+    console.log(`Server is running on port ${process.env.PORT}...`);
 });

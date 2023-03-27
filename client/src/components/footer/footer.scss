@@ -1,6 +1,8 @@
+@import '../../App';
+
 .footer {
   width: 100vw;
-  height: 392px;
+  min-height: 392px;
   background-color: #434343;
   box-sizing: border-box;
   display: flex;
@@ -14,11 +16,19 @@
 
     .menu-wrapper {
       display: flex;
-      width: 70%;
+      width: 100%;
       justify-content: space-between;
+      flex-wrap: wrap;
+
+      //.wrap{
+        //width: 50%;
+        //min-width: 600px;
+        //display: flex;
+        //justify-content: space-between;
+
 
       .menu-box {
-        max-width: 300px;
+        width: 300px;
 
         .title {
           font-style: normal;
@@ -40,77 +50,111 @@
           cursor: pointer;
         }
 
+        @include tablet{
+          width: 220px;
+          margin-bottom: 40px;
+        }
+
       }
 
-    }
+      .logo-box {
+        //width: 30%;
 
-
-    .logo-box {
-      width: 30%;
-
-      .logo {
-        height: 112px;
-        width: 250px;
-        position: relative;
-        display: flex;
-
-        .big_item {
+        .logo {
           height: 112px;
-          width: 56px;
-          border-radius: 0 56px;
-          background-color: #D8D8D8;
-        }
-
-        .small_item {
-          height: 65px;
-          width: 35px;
-          margin-left: 5px;
-          border-radius: 35px 0;
-          background-color: #D8D8D8;
-        }
-
-        .medium_item {
-          height: 40px;
-          margin-top: 6px;
-          width: 80px;
-          margin-left: 5px;
-          border-radius: 0 40px;
-          background-color: #D8D8D8;
-        }
-
-
-        .wrap_text {
-          color: #D8D8D8;
+          width: 250px;
           position: relative;
+          display: flex;
 
-          h4 {
-            position: absolute;
-            top: 13px;
-            left: -32px;
-            font-size: 33px;
+          .big_item {
+            height: 112px;
+            width: 56px;
+            border-radius: 0 56px;
+            background-color: #D8D8D8;
           }
 
-          p {
-            position: absolute;
-            font-weight: 400;
-            font-size: 33px;
-            bottom: 6px;
-            padding-left: 4px;
+          .small_item {
+            height: 65px;
+            width: 35px;
+            margin-left: 5px;
+            border-radius: 35px 0;
+            background-color: #D8D8D8;
+          }
+
+          .medium_item {
+            height: 40px;
+            margin-top: 6px;
+            width: 80px;
+            margin-left: 5px;
+            border-radius: 0 40px;
+            background-color: #D8D8D8;
+          }
+
+
+          .wrap_text {
+            color: #D8D8D8;
+            position: relative;
+
+            h4 {
+              position: absolute;
+              top: 13px;
+              left: -32px;
+              font-size: 33px;
+            }
+
+            p {
+              position: absolute;
+              font-weight: 400;
+              font-size: 33px;
+              bottom: 6px;
+              padding-left: 4px;
+            }
+          }
+
+          @media (max-width: 1720px) {
+            margin-bottom: 80px;
+
+          }
+
+          @include tablet{
+            width: 230px;
           }
         }
+
+        .logo-text{
+          margin-top: 20px;
+          width: 312px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 28px;
+          color: #FFFFFF;
+
+          @media(max-width: 1790px){
+            width: 280px;
+
+          }
+
+          @media(max-width: 1680px){
+            display: none;
+          }
+        }
+
+        @include tablet; @include notebook{
+          margin-top: 50px;
+        }
+
       }
 
-      .logo-text{
-        margin-top: 20px;
-        width: 312px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 28px;
-        color: #FFFFFF;
-      }
+      //  @include tablet{
+      //    min-width: 500px;
+      //  }
+      //
+      //}
 
     }
+
+
 
     .last-text {
       position: absolute;
@@ -120,6 +164,14 @@
       font-size: 14px;
       line-height: 28px;
       color: #FFFFFF;
+
+      @include  tablet; @include notebook{
+        bottom: -15px;
+      }
+    }
+
+    @include notebook{
+      margin: 64px 10vw 44px;
     }
 
   }
