@@ -225,8 +225,22 @@
           justify-content: center;
           align-items: center;
 
+          ul li:first-child button svg path, ul li:last-child button svg path{
+              fill: black !important;
+          }
+          ul li:first-child .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-disabled{
+            display: none;
+          }
+
+
           .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
             color: #727272;
+            background-color: #FFFFFF;
+          }
+
+          .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root:hover {
+            background-color: #0880AE;
+            color: #FFFFFF;
           }
 
           .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {

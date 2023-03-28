@@ -40,7 +40,7 @@ export default function Navbar() {
 
                     <div className='right_side'>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/" onClick={() => setIsActive(false)}>Home</Link></li>
                             <li><Link to="#">Services
                                 <span className='up_icon'>
                                 <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
@@ -72,7 +72,7 @@ export default function Navbar() {
 
                             </Link>
                                 <ul>
-                                    <li><Link to="#">Sub-Menu 1</Link></li>
+                                    <li><Link to="#" onClick={() => setIsActive(false)}>Sub-Menu 1</Link></li>
                                     <li><Link to="#">Sub-Menu 2
                                         <span className='right_icon'>
                                         <svg width="6" height="9" viewBox="0 0 12 18" fill="none"
@@ -92,16 +92,16 @@ export default function Navbar() {
 
                                     </Link>
                                         <ul>
-                                            <li><Link to="#">Some-Info 1</Link></li>
-                                            <li><Link to="#">Senectus cursus pretium malesuada.</Link></li>
-                                            <li><Link to="#">Some-Info 3</Link></li>
+                                            <li><Link to="#" onClick={() => setIsActive(false)}>Some-Info 1</Link></li>
+                                            <li><Link to="#" onClick={() => setIsActive(false)}>Senectus cursus pretium malesuada.</Link></li>
+                                            <li><Link to="#" onClick={() => setIsActive(false)}>Some-Info 3</Link></li>
                                         </ul>
                                     </li>
-                                    <li><Link to="#">Sub-Menu 3</Link></li>
-                                    <li><Link to="#">Sub-Menu 4</Link></li>
+                                    <li><Link to="#" onClick={() => setIsActive(false)}>Sub-Menu 3</Link></li>
+                                    <li><Link to="#" onClick={() => setIsActive(false)}>Sub-Menu 4</Link></li>
                                 </ul>
                             </li>
-                            <li><Link to="#">About
+                            <li><Link to="#" onClick={() => setIsActive(false)}>About
                                 <span className='up_icon'>
                                 <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -130,8 +130,8 @@ export default function Navbar() {
                             </svg>
                             </span>
                             </Link></li>
-                            <li><Link to="#">Book now</Link></li>
-                            <li><Link to="#">Shop
+                            <li><Link to="#" onClick={() => setIsActive(false)}>Book now</Link></li>
+                            <li><Link to="#" onClick={() => setIsActive(false)}>Shop
                                 <span className='up_icon'>
                                 <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -160,8 +160,8 @@ export default function Navbar() {
                             </svg>
                             </span>
                             </Link></li>
-                            <li><Link to="/blog">Blog</Link></li>
-                            <li><Link to="#">Contact</Link></li>
+                            <li><Link to="/blog" onClick={() => setIsActive(false)}>Blog</Link></li>
+                            <li><Link to="#" onClick={() => setIsActive(false)}>Contact</Link></li>
                         </ul>
                     </div>
                 </div>
